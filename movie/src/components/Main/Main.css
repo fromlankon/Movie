@@ -1,0 +1,270 @@
+@font-face {
+    font-family: Roboto;
+    src: url(/movie/src/fonts/RobotoCondensed-Regular.ttf);
+}
+
+.section1{
+    width: 100%;
+    height: 90vh;
+    background-image: url(https://xenothemes.co.uk/specto/wp-content/uploads/sites/2/2018/03/hero.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.content{
+    width: 1150px;
+    z-index: 5000;
+}
+
+.text1{
+    color: #fbbd61;
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.text2{
+    font-family: Roboto;
+    font-size: 52px;
+    line-height: 1.4em;
+    color: white;
+    font-weight: 300;
+}
+
+.text3{
+    font-family: Roboto;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    width: 720px;
+    line-height: 24px;
+}
+
+.down{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.pg{
+    width: 46px;
+    height: 46px;
+    border: 2px solid white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.play{
+    padding: 12px 24px;
+    font-family: Roboto;
+    background: linear-gradient(to right, #ec7532 0%,#fbbd61 100%);
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 7px;
+    border-radius: 30px;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.fa-play{
+    font-size: 12px;
+}
+
+.section2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.section2main{
+    width: 1150px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.tab{
+    position: relative;
+}
+
+.tab p{
+    font-family: Roboto;
+    color: #ec7532;
+    letter-spacing: 1.7px;
+    position: relative;
+}
+
+.tab p::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -19px;
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(to right, #ec7532 0%,#fbbd61 100%);
+    z-index: 2500;
+}
+
+.tab::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #D8D8D8;
+    left: 0;
+    bottom: -20px;
+}
+
+.cards{
+    display: flex;
+    gap: 30px;
+}
+
+.card{
+    width: 270px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.img{
+    width: 100%;
+    height: 340px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img::after{
+    content: "";
+    position: absolute;
+    left: -170px;
+    top: 0;
+    width: 0px;
+    height: 100%;
+    background: linear-gradient(to right, #ec7532 0%,#fbbd61 100%);
+    opacity: .9;
+    transition: .5s;
+    transform: skew(45deg);
+}
+
+.img:hover::after{
+    width: 250%;
+}
+
+.img:hover .imgText{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(100%);
+}
+
+.imgText{
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(90%);
+    position: absolute;
+    z-index: 5000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.cardPlay{
+    width: 76px;
+    height: 76px;
+    border: 2px solid white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cardPlay:hover{
+    transform: scale(92%);
+}
+
+.bi-play-fill{
+    transition: .3s;
+}
+
+.cardPlay:hover .bi-play-fill{
+    opacity: .6;
+}
+
+.cardPlay i{
+    padding-left: 4px;
+    padding-top: 4px;
+    font-size: 20px;
+}
+
+.cardBottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.title{
+    color: #8d8d8d;
+    font-family: Roboto;
+    letter-spacing: 2px;
+}
+
+.rating{
+    display: flex;
+    gap: 4px;
+}
+
+.fa-star{
+    color: #fbbd61;
+    font-size: 14px;
+}
+
+.grayStar{
+    color: #d8d8d8;
+}
+
+.text4{
+    color: white;
+    font-family: Roboto;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.text5{
+    color: white;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+}
